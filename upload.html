@@ -1,0 +1,312 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <style>
+      ul {
+        float: left;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+      }
+
+      a.cd {
+        float: left;
+        width: 7.9em;
+        text-decoration: none;
+        color: white;
+        background-color: grey;
+        padding: 0.2em 0.6em;
+        border-right: 1px solid white;
+      }
+      h1 {
+        color: saddlebrown;
+        background-color: gainsboro;
+        text-align: center;
+        font-size: 44px;
+        margin: 0;
+        padding: 0;
+      }
+
+      a.cd:hover {
+        background-color: #ff3300;
+      }
+
+      li {
+        display: inline;
+      }
+    </style>
+
+    <style>
+      div {
+        background-color: #e0ebeb;
+        height: auto;
+      }
+      /* Full-width input fields */
+      input[type="text"],
+      input[type="password"],
+      input[type="Number"],
+      input[type="date"] {
+        width: 30%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        height: 10px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+
+      /* Set a style for all buttons */
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 25%;
+      }
+
+      /* Extra styles for the cancel button */
+      .cancelbtn {
+        padding: 14px 20px;
+        background-color: #f44336;
+        width: 25%;
+      }
+      body {
+        background-color: darkgoldenrod;
+      }
+      /* Float cancel and signup buttons and add an equal width */
+      .cancelbtn,
+      .signupbtn {
+        float: left;
+        width: 22%;
+      }
+
+      /* Add padding to container elements */
+      .container {
+        width: 100%;
+
+        padding: 16px;
+      }
+
+      /* Clear floats */
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+        height: 30px;
+      }
+
+      /* Change styles for cancel button and signup button on extra small screens */
+      @media screen and (max-width: 300px) {
+        .cancelbtn,
+        .signupbtn {
+          width: 100%;
+        }
+      }
+    </style>
+    <img src="Untitled.png" alt="some_text" height="13%" width="100%" />
+
+    <style>
+      h1 {
+        color: blue;
+      }
+      label {
+        min-width: 180px;
+        display: inline-block;
+      }
+    </style>
+    <title>Register</title>
+
+    <h2>Register for Admissions</h2>
+
+    <form action="/student/upload" method="post" style="border: 1px solid #ccc">
+      <div class="container">
+        <fieldset>
+          <legend>Personal details</legend>
+          <label><b>Name </b> </label>
+          <input
+            type="text"
+            placeholder="Enter name"
+            name="name"
+            required
+          /><br />
+          <label for="phone_no"><b>Phone-Number</b></label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone_no"
+            placeholder="Enter number"
+            minlength="7"
+            maxlength="11"
+            required
+          /><br />
+          <label><b>Father's Name</b></label>
+          <input
+            type="text"
+            placeholder="Enter Father Name"
+            name="f_name"
+            required
+          /><br />
+          <label for="f_phone_no"><b>Phone-Number</b></label>
+          <input
+            type="tel"
+            id="phone"
+            name="f_phone_no"
+            placeholder="Enter number"
+            minlength="7"
+            maxlength="11"
+            required
+          /><br />
+          <label><b>Mother's Name</b></label>
+          <input
+            type="text"
+            placeholder="Enter Mother Name"
+            name="m_name"
+            required
+          /><br />
+          <label for="m_phone_no"><b>Phone-Number</b></label>
+          <input
+            type="tel"
+            id="phone"
+            name="m_phone_no"
+            placeholder="Enter number"
+            minlength="7"
+            maxlength="11"
+            required
+          /><br />
+          <label><b>Date of Birth</b></label>
+          <input
+            type="date"
+            placeholder="Enter DOB in YYYY/MM/DD"
+            min="1980-01-01"
+            max="2020-01-01"
+            name="dob"
+            required
+          /><br />
+          <label><b>Select Gender</b></label>
+          <select name="gender">
+            <option default>Select Gender</option>
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+            <option value="T">TransGender</option></select
+          ><br /><br />
+          <label for="mail"><b>Personal Mail-ID</b></label>
+          <input
+            type="mail"
+            id="email"
+            name="email"
+            placeholder="enter mail id"
+            required
+          /><br /><br />
+          <label for="f_mail"><b>Parent's Mail-ID</b></label>
+          <input
+            type="mail"
+            id="email1"
+            name="f_mail"
+            placeholder="enter mail id"
+            required
+          /><br />
+          <label><b>Address</b></label>
+          <input
+            type="text"
+            placeholder="Enter Gaurdian Address"
+            name="addr"
+            required
+          /><br />
+        </fieldset>
+        <fieldset>
+          <legend>Academic details</legend>
+          <label><b>Course opted</b></label>
+          <select name="course">
+            <option value="Def">Select Course</option>
+            <option value="CSE">Computer Science & Engineering</option>
+            <option value="Civil Engineering">Civil Engineering</option>
+            <option value="Chemical Engineering">Chemical Engineering</option>
+            <option value="Electronics Engineering">
+              Electronics Engineering
+            </option>
+            <option value="Mechanical Engineering">
+              Mechanical Engineering
+            </option>
+            <option value="ElectricalEngineering">
+              Electrical Engineering
+            </option>
+          </select>
+          <br />
+          <label><b>10th Marks</b></label>
+          <input
+            type="Number"
+            placeholder="Enter Board Marks(for 500)"
+            name="tenth"
+            min="300"
+            max="500"
+            required
+            pattern="[0-9]{3}"
+          /><br />
+          <!-- <label for="file1"><b>Document</b></label> -->
+          <!-- <input type="file" id="file1" name="file1" /> <br /> -->
+          <label><b>12th Marks</b></label>
+          <input
+            type="Number"
+            placeholder="Enter marks(for 600)"
+            name="twelfth"
+            min="300"
+            max="600"
+            required
+            pattern="[0-9]{3}"
+          /><br />
+          <!-- <label for="file2"><b>Document</b></label> -->
+          <!-- <input type="file" id="file2" name="file2" /> -->
+          <!-- <br /> -->
+          <label><b>Entrance Exam marks</b></label>
+          <input
+            type="Number"
+            placeholder="Enter marks(for 100)"
+            name="e_mark"
+            min="10"
+            max="100"
+            required
+            pattern="[0-9]{3}"
+          /><br />
+          <!-- <label for="file3"><b>Document</b></label> -->
+          <!-- <input type="file" id="file3" name="file3" /> -->
+        </fieldset>
+        <fieldset>
+          <legend>Account details</legend>
+          <label><b>User ID No.</b></label>
+          <input
+            type="Number"
+            placeholder="Enter User ID no(5 digit)"
+            pattern="[0-9]{5}"
+            maxlength="5"
+            name="userid"
+            required
+          /><br />
+          <label><b>Password</b></label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="password"
+            required
+          /><br />
+        </fieldset>
+        <br />
+        <!-- <input type="checkbox" checked="checked" /> Remember me -->
+        <p>
+          By creating an account you agree to our
+          <a href="#">Terms & Privacy</a>.
+        </p>
+
+        <div class="clearfix">
+          <button type="button" class="cancelbtn">Cancel</button>
+          <button type="submit" class="signupbtn" value="Submit">Submit</button>
+        </div>
+      </div>
+    </form>
+    <br />
+  </body>
+</html>

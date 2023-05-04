@@ -1,0 +1,18 @@
+{
+  "name": "mod-ceproj",
+  "version": "1.0.0",
+  "description": "Web development project (frontend and backend) which aims at giving students information about a college's admission system, eligibility criteria, fee structure, accommodations, etc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "hbs": "^4.2.0",
+    "mongoose": "^7.1.0"
+  }
+}
